@@ -1,0 +1,151 @@
+.header-wrap {
+  background: url(../images/Header/header.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 62em;
+}
+.header {
+  overflow: auto;
+  &-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 7.5em;
+    &__sign {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+    }
+    &__logo {
+      font-size: 2em;
+      border: 3px solid black;
+      padding: 0.3em;
+      span {
+        color: orangered;
+      }
+    }
+    &__menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+      position: fixed;
+      top: 0;
+      left: 70%;
+      bottom: 0;
+      right: 0;
+      background: rgba($color: #000000, $alpha: 0.8);
+      z-index: 1;
+
+      &.active {
+        display: flex;
+      }
+    }
+    &__links {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      width:2.5em;
+      height:2.5em;
+      top: 1.25em;
+      right: 1.25em;
+      background: transparent;
+      z-index: 2;
+      span {
+        display: block;
+        width: 80%;
+        height: 3px;
+        background: black;
+        &:not(:last-of-type) {
+          margin-bottom: 3px;
+        }
+      }
+      &.active {
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transition: 0.5s;
+          &:nth-of-type(2) {
+            background: transparent;
+          }
+          &:first-of-type {
+            transform: rotate(45deg) translate(-10px, 10px);
+          }
+          &:last-of-type {
+            transform: rotate(-45deg) translate(-10px, -10px);
+          }
+        }
+      }
+    }
+  }
+  &-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 9.3em;
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: 600;
+      color: #000;
+      margin: 2em 0 1em;
+      span {
+        color: orangered;
+      }
+    }
+    &__subtitle {
+      width: 50%;
+      text-align: center;
+      font-size: 1em;
+      line-height: 1.5em;
+      color: #000;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    background: white;
+    box-shadow: 15px 10px 40px black;
+    &__text {
+      width: 100%;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-top: 1em;
+      span {
+        color: orangered;
+      }
+    }
+    &__message {
+      width: 85%;
+      border-bottom: 2px solid gray;
+      font-size: 1em;
+      margin-top: 2.5em;
+    }
+    &__btn {
+      width: 65%;
+      height: 3em;
+      background: orangered;
+      border-radius: 20px;
+      font-size: 1em;
+      color: white;
+      margin:1.5em 0 1.5em;
+    }
+  }
+}
