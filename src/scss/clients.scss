@@ -1,0 +1,91 @@
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  &-testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    height: 15em;
+    margin: auto;
+    &__text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      height: 15em;
+      border: 2px solid gray;
+      box-shadow: 0px 0px 40px gray;
+      margin: 5em 4em 5em;
+      &:hover {
+        box-shadow: 0px 0px 40px orangered;
+        transition: 0.5s;
+      }
+    }
+    &__quote {
+      width: 80%;
+      text-align: center;
+      margin-top: 5em;
+    }
+    &__photo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__image {
+      width: 5em;
+      height: 5em;
+      border-radius: 50%;
+    }
+  }
+  .slider {
+    position: relative;
+    width: 100%;
+    margin: 0 -4em;
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3em;
+      button {
+        width: 16px;
+        height: 6px;
+        background: gray;
+        margin: 0 0.5em 0;
+        color: transparent;
+      }
+      .slick-active {
+        button {
+          background: orangered;
+        }
+      }
+    }
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      border-radius: 50%;
+      color: black;
+      font-size: 1em;
+      width: 32px;
+      height: 32px;
+      background: transparent;
+      font-weight: 900;
+      &:hover {
+        background: orangered;
+        color: white;
+      }
+      &.prev {
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+      &.next {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+    }
+  }
+}

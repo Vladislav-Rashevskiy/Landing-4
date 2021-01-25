@@ -1,0 +1,113 @@
+.team-wrap {
+  background: #eee8e8;
+  padding-bottom: 8em;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    grid-column: auto;
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      width: 32%;
+      height: 28em;
+      margin: auto;
+      &:hover {
+        .team-info__personality {
+          bottom: 0;
+        }
+        .team-info__hidden {
+          opacity: 1;
+        }
+        .team-info__position {
+          color: orangered;
+        }
+      }
+    }
+    &__hidden {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 10%,
+        white 50%,
+        white
+      );
+      height: 100%;
+      width: 100%;
+      transition: 0.5s;
+    }
+    &__progress {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      .progress-line {
+        display: block;
+        width: 60%;
+        height: 4px;
+        background: black;
+        margin-top: 0.5em;
+        span {
+          display: block;
+          height: 100%;
+          background: orangered;
+        }
+      }
+    }
+    &__personality {
+      background: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 50%;
+      height: 15%;
+      position: absolute;
+      bottom: -1em;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.5s;
+    }
+    &__name {
+      width: 100%;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #000;
+    }
+    &__position {
+      width: 50%;
+      text-align: center;
+      font-size: 1em;
+      line-height: 1em;
+      color: black;
+    }
+  }
+  .photo1 {
+    background: url(/images/Team/6f6d9f58-64d3-4e89-a.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .photo2 {
+    background: url(/images/Team/9bd25c37-8640-459c-b.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .photo3 {
+    background: url(/images/Team/416851df-aab4-4afc-8.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}

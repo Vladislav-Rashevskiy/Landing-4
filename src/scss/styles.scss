@@ -70,8 +70,51 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0 15px;
     margin: auto;
 }
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    &-title {
+      width: 100%;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: 600;
+      color: #000;
+      margin: 2em 0 1em;
+      span {
+        color: orangered;
+      }
+    }
+    &-subtitle {
+      width: 50%;
+      text-align: center;
+      font-size: 1em;
+      line-height: 1.5em;
+      color: #000;
+      margin-bottom: 5em;
+    }
+}
+.buttons{
+      height: 3em;
+      background: white;
+      box-shadow: 10px 0px 25px gray;
+      border-radius: 20px;
+      font-size: 1em;
+      color: black;
+      margin: 1em 0 1.5em;
+      &:hover {
+        transform: scale(1.1);
+        transition: 1s;
+        background: orangered;
+        box-shadow: 10px 0px 25px orangered;
+      }
+}
 @import "header";
 @import "process";
 @import "works";
 @import "services";
+@import "team";
+@import "clients";
+@import "social";
 @import "footer";

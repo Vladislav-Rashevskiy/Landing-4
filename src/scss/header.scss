@@ -2,7 +2,7 @@
   background: url(../images/Header/header.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 62em;
+  height: 57.5em;
 }
 .header {
   overflow: auto;
@@ -46,6 +46,7 @@
     &__links {
       text-decoration: none;
       font-weight: bold;
+      font-size: 1em;
       color: white;
       text-align: center;
       margin-bottom: 1em;
@@ -88,31 +89,6 @@
           }
         }
       }
-    }
-  }
-  &-text {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 9.3em;
-    &__title {
-      width: 100%;
-      text-align: center;
-      font-size: 2.5em;
-      font-weight: 600;
-      color: #000;
-      margin: 2em 0 1em;
-      span {
-        color: orangered;
-      }
-    }
-    &__subtitle {
-      width: 50%;
-      text-align: center;
-      font-size: 1em;
-      line-height: 1.5em;
-      color: #000;
     }
   }
   &-form {
