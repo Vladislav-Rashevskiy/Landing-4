@@ -1,6 +1,9 @@
 .team-wrap {
   background: #eee8e8;
   padding-bottom: 8em;
+  @media (max-width: 720px) {
+    padding-bottom: 3em;
+  }
 }
 .team {
   display: flex;
@@ -18,7 +21,7 @@
       justify-content: center;
       position: relative;
       width: 32%;
-      height: 28em;
+      height: 25em;
       margin: auto;
       &:hover {
         .team-info__personality {
@@ -30,6 +33,14 @@
         .team-info__position {
           color: orangered;
         }
+      }
+      @media (max-width: 720px) {
+        width: 40%;
+        margin: 1em 1em 3em;
+      }
+      @media (max-width: 480px) {
+        width: 70%;
+        margin: 1em 1em 3em;
       }
     }
     &__hidden {
@@ -86,6 +97,9 @@
       font-size: 1.5em;
       font-weight: 600;
       color: #000;
+      @media (max-width: 1100px) {
+        font-size: 1.1em;
+      }
     }
     &__position {
       width: 50%;

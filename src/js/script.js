@@ -39,3 +39,6 @@ $('.slider').slick({
   nextArrow: "<button class='next'>></button>",
   dots:true,
 });
+$(".header-button__btn").click(()=>{
+  $(".header-form").toggle();
+})

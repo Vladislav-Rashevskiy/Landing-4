@@ -3,10 +3,16 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10em;
+  @media (max-width: 600px) {
+   margin-bottom: 3em;
+  }
   &-part {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media (max-width: 850px) {
+      justify-content: center;
+    }
     &__elements {
       display: flex;
       flex-wrap: wrap;
@@ -14,6 +20,19 @@
       width: 24%;
       height: 18em;
       margin: auto;
+      @media (max-width: 850px) {
+        width: 40%;
+        height: auto;
+        margin: 0 2em 2em
+      }
+      @media (max-width: 600px) {
+        width: 60%;
+        height: auto;
+        margin: 0 0 2em
+      }
+      @media (max-width: 480px) {
+        width: 75%;
+      }
     }
     &__images {
       width: 3em;
@@ -33,6 +52,9 @@
       font-size: 1em;
       color: white;
       margin-bottom: 3em;
+      @media (max-width: 480px) {
+        margin-bottom:0;
+      }
     }
     &__btn {
       width: 65%;

@@ -2,10 +2,14 @@
   background: url(../images/Header/header.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 57.5em;
 }
 .header {
   overflow: auto;
+  @media (max-width: 550px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &-navbar {
     display: flex;
     flex-wrap: wrap;
@@ -16,6 +20,9 @@
       align-items: center;
       justify-content: center;
       width: 20%;
+      @media (max-width: 550px) {
+        margin-left: 1.5em;
+      }
     }
     &__logo {
       font-size: 2em;
@@ -98,6 +105,12 @@
     width: 30%;
     background: white;
     box-shadow: 15px 10px 40px black;
+    @media (max-width: 720px) {
+      width: 40%;
+    }
+    @media (max-width: 550px) {
+      display: none;
+    }
     &__text {
       width: 100%;
       text-align: center;
@@ -113,6 +126,9 @@
       border-bottom: 2px solid gray;
       font-size: 1em;
       margin-top: 2.5em;
+      @media (max-width: 720px) {
+        margin-top: 2em;
+      }
     }
     &__btn {
       width: 65%;
@@ -124,4 +140,22 @@
       margin:1.5em 0 1.5em;
     }
   }
-}
+  &-button{
+    display: none;
+    &__btn{
+      width: 25%;
+      height: 3em;
+      background: orangered;
+      border-radius: 20px;
+      font-size: 1em;
+      color: white;
+      margin:0 0 5em;
+    }
+    @media (max-width: 550px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  }
+
