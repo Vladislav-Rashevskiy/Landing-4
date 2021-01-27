@@ -19,19 +19,22 @@
       height: 15em;
       border: 2px solid gray;
       box-shadow: 0px 0px 40px gray;
-      margin: 5em 4em 5em;
+      margin: 4em 2em;
       &:hover {
         box-shadow: 0px 0px 40px orangered;
         transition: 0.5s;
       }
       @media (max-width: 1100px) {
-        margin: 3em 2em 5em;
+        margin: 3em 2em;
       }
     }
     &__quote {
       width: 80%;
       text-align: center;
       margin-top: 5em;
+      @media (max-width: 900px) {
+        width: 85%;
+      }
     }
     &__photo {
       position: absolute;
@@ -85,11 +88,11 @@
       }
       &.prev {
         left: 0;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -100%);
       }
       &.next {
         right: 0;
-        transform: translate(50%, -50%);
+        transform: translate(50%, -100%);
       }
     }
   }

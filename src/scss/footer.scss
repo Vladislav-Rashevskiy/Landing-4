@@ -1,45 +1,58 @@
-.footer-wrap{
-    background: #eeeded;
+.footer-wrap {
+  background: #eeeded;
 }
-.footer{
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &-button {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    height: 12em;
-    &-button{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2em;
+    width: 100%;
+    margin-top: 2em;
+  }
+  &-btn {
+    width: 20%;
+    @media (max-width: 720px) {
+      width: 25%;
     }
-    &-btn{
-        width: 20%;
+    @media (max-width: 600px) {
+      width: 40%;
     }
-    &-contact{
-        display: flex;
-        justify-content: flex-end;
-        align-items: baseline;
-        width: 40%;
-        margin-bottom: 2em;
-        &__images{
-            margin: 0 0.5em;
-            border-radius: 50%;
-            width: 2em;
-            height: 2em;
-            object-fit: none;
-            background: gray;
-            margin: 0 0.5em;
-            &:hover{
-                background: orangered;
-                transition: 0.5s;
-            }
-        }
+  }
+  &-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 40%;
+    margin-bottom: 2em;
+    &__images {
+      margin: 0 0.5em;
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      object-fit: none;
+      background: gray;
+      margin: 0 0.5em;
+      &:hover {
+        background: orangered;
+        transition: 0.5s;
+      }
     }
-    &-copyright{
-        display: flex;
-        align-items: center;
-        width: 45%;
-        padding: 0 1em;
-        margin-bottom: 2em;
+    @media (max-width: 600px) {
+      justify-content: center;
+      width: 100%;
     }
+  }
+  &-copyright {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    padding: 0 1em;
+    margin-bottom: 2em;
+    @media (max-width: 600px) {
+      justify-content: center;
+      width: 100%;
+    }
+  }
 }

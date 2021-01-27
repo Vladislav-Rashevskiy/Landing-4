@@ -1,7 +1,7 @@
 .team-wrap {
   background: #eee8e8;
   padding-bottom: 8em;
-  @media (max-width: 720px) {
+  @media (max-width: 800px) {
     padding-bottom: 3em;
   }
 }
@@ -34,12 +34,18 @@
           color: orangered;
         }
       }
-      @media (max-width: 720px) {
+      @media (max-width: 800px) {
         width: 40%;
+        height: 20em;
         margin: 1em 1em 3em;
+      }
+      @media (max-width: 600px) {
+        width: 40%;
+        height: 16em;
       }
       @media (max-width: 480px) {
         width: 70%;
+        height: 25em;
         margin: 1em 1em 3em;
       }
     }
@@ -90,6 +96,15 @@
       left: 50%;
       transform: translateX(-50%);
       transition: 0.5s;
+      @media (max-width: 850px) {
+        width: 70%;
+      }
+      @media (max-width: 600px) {
+        height: 25%;
+      }
+      @media (max-width: 480px) {
+        height: 15%;
+      }
     }
     &__name {
       width: 100%;
